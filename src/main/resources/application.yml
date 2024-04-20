@@ -14,3 +14,10 @@ oauth2:
     clientId: c6be272f7203a4447c6b8a50df5901df
     clientSecret: MgiaQS9MEWjzDuPa8MPchTYxNnK1hiFl
     redirectUri: http://localhost:3000/oauth
+
+jwt:
+  accessTokenSecret: mySuperSecretKeyForAccessTokenThatIsAtLeast32BytesLong
+  refreshTokenSecret: mySuperSecretKeyForRefreshTokenThatIsAtLeast32BytesLong
+  accessTokenExpirationTime: 3600  # 1 hour in seconds
+  refreshTokenExpirationTime: 604800  # 1 week in seconds
+  issuer: springsecurity
