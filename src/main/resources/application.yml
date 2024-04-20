@@ -4,3 +4,13 @@ spring:
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+oauth2:
+  kakao:
+    baseUrl: https://kauth.kakao.com
+    clientId: c6be272f7203a4447c6b8a50df5901df
+    clientSecret: MgiaQS9MEWjzDuPa8MPchTYxNnK1hiFl
+    redirectUri: http://localhost:3000/oauth
